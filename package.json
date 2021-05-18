@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JullsMD/parcel.git"
+    "url": "git+https://github.com/JullsMD/goit-js-hw-09-gallery-parcel.git"
   },
   "author": "Julia Melnik",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JullsMD/parcel/issues"
+    "url": "https://github.com/JullsMD/goit-js-hw-09-gallery-parcel/issues"
   },
   "homepage": "https://JullsMD.github.io/goit-js-hw-09-gallery-parcel",
   "devDependencies": {
