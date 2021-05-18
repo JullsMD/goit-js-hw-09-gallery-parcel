@@ -1,11 +1,7 @@
+import gallery from './gallery-items';
+import {galleryContainerRef} from './refs';
 
-
-// Создание и рендер разметки по массиву данных и предоставленному шаблону.
-// Ссылка на оригинальное изображение должна храниться в data-атрибуте source
-//  на элементе img, и указываться в href ссылки
-//  (это необходимо для доступности).
-
-export function createGalleryMarkup(gallery) {
+export function createGalleryMarkup(gallery){
     return gallery
         .map(({preview,original,description}) => {
             return `
@@ -26,3 +22,4 @@ export function createGalleryMarkup(gallery) {
         })
         .join('');
 };
+export const insertionHtml = galleryContainerRef.insertAdjacentHTML('beforeend', createGalleryMarkup(gallery));

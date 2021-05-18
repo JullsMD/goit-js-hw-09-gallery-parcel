@@ -1,10 +1,7 @@
-const modalImageRef = document.querySelector('.lightbox__image');
-const modalRef = document.querySelector('.lightbox');
-const lightboxOverlayRef = document.querySelector('.lightbox__overlay');
+import {galleryContainerRef,modalImageRef, modalRef, closeButtonRef,lightboxOverlayRef} from './refs';
+import {closeModal,onEscapePress} from './closeModal';
 
-// Открытие модального окна по клику на элементе галереи.
-// Подмена значения атрибута src элемента img.lightbox__image.
-// Реализация делегирования на галерее ul.js-gallery,  получение url большого изображения.
+
 export function onGalleryContainerClick(evt) {
     evt.preventDefault();
 
@@ -21,4 +18,4 @@ export function onGalleryContainerClick(evt) {
 
     const onCloseButton = closeButtonRef.addEventListener('click',closeModal);
 };
-
+export const galleryClick = galleryContainerRef.addEventListener('click',onGalleryContainerClick);
