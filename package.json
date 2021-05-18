@@ -1,0 +1,23 @@
+{
+  "name": "homework9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JullsMD/parcel.git"
+  },
+  "author": "Julia Melnik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JullsMD/parcel/issues"
+  },
+  "homepage": "https://github.com/JullsMD/parcel#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
